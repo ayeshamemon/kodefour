@@ -1,0 +1,46 @@
+export const Features = ({ ...props }) => (
+  <Section py="8|12|16" {...props}>
+    <Container>
+      <h2 textAlign="center">Why Marhaba</h2>
+      <Grid col="1|2|3" mt="8|10|12" gap="4|6|8">
+        <Feature
+          icon="phone"
+          heading="Excellent Support"
+          description="Vivamus magna just, lacinia eget consect sed."
+        />
+        <Feature
+          icon="clock"
+          heading="Time saving"
+          description="Vivamus magna just, lacinia eget consect sed."
+        />
+        <Feature
+          icon="check-mark-black"
+          heading="Most Competitive Packages"
+          description="Vivamus magna just, lacinia eget consect sed."
+        />
+        </Grid>
+    </Container>
+  </Section>
+)
+
+export const Feature = ({ icon, heading, description, ...props }) => (
+  <Flexbox
+    alignItems="center|flex-start"
+    flexDirection="column|row"
+    textAlign="center|left"
+    p="4"
+    {...props}
+  >
+    <Flexbox justifyContent="center" bg="muted" rounded="full" size="18">
+      <Icon name={icon} size="8" />
+    </Flexbox>
+    <Div flex="1" mt="6|0" ml="0|6">
+      <H3 fontSize="2xl" m="0">
+        {heading}
+      </H3>
+      <P fontSize="md" mt="2">
+        {description}
+      </P>
+    </Div>
+  </Flexbox>
+)
