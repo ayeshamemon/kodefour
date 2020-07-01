@@ -1,0 +1,42 @@
+export const Cards = ({ ...props }) => (
+  <Section py="8|12|16|24" {...props}>
+      <Container>
+        <H2 m="0" lineHeight="tight" textAlign="center">
+        Our Packages
+        </H2>
+        <P fontSize="xl|2xl" mt="2" textAlign="center">
+        We connect you to top artists around the world.
+        </P>
+        <Grid col="1|2" gap="6|8|10">
+        <Card
+          image="makkah-done.jpg"
+          title="General Umrah Package"
+          description="sssssssssssuuuuuuuuur eisn apr  xuje"
+          link="http://localhost:8000/packages"
+        />
+        <Card
+          image="the-pilgrims-guide2.jpg"
+          title="VIP Package"
+          description="A eaque id quia nobis quod. Commodi enim accusantium doloremque
+              option."
+          link="http://localhost:8000/packages"
+        />
+      </Grid>
+    </Container>
+  </Section>
+)
+
+export const Card = ({ image, title, description, link, ...props }) => (
+  <Div {...props}>
+    <Image src={image} w="full" />
+    <Div py="4|6|8">
+      <H2 m="0" fontSize="3xl">
+        {title}
+      </H2>
+      <P fontSize="xl">{description}</P>
+      <ButtonLink href={link} variant="primary">
+        Learn more <Icon name="arrow-right" ml="2" />
+      </ButtonLink>
+    </Div>
+  </Div>
+)
