@@ -2,14 +2,14 @@ export const Pricing = ({ ...props }) => (
   <Section py="8|12|16|24" {...props}>
     <Container>
       <Flexbox flexDirection="column">
-        <H2 m="0" >Our Packages</H2>
+        <H2 m="0" >Umrah for all</H2>
         <P fontSize="xl|2xl" mt="2" >
           Our Umrah Packages are cumtom designed for your needs
         </P>
-        </Flexbox>
-     <Grid col="1|2" mt="4|6|8" gap="4|6|0">
+      </Flexbox>
+      <Grid col="1|2" mt="4|6|8" gap="4|6|0">
         <PricingItem 
-          heading ="General Umrah Package"
+         heading ="General Umrah Package"
           list={[
             "Stay:15 days",
             "Hotel Accomodation",
@@ -46,10 +46,10 @@ export const Pricing = ({ ...props }) => (
           isSelected
         />
       </Grid>
-     
-      </Container>
+</Container>
   </Section>
 )
+
 
 export const PricingItem = ({
   heading,
@@ -84,8 +84,6 @@ export const PricingItem = ({
         </Li>
       ))}
     </Ul>
-    <Button variant={isSelected ? "primary" : "outlinePrimary"} mt="8" w="full">
-      Select Package
-    </Button>
+    
   </Flexbox>
 )
