@@ -1,10 +1,11 @@
+import ace from '../images/pattern.svg'
 export const Features = ({ ...props }) => (
-  <Section py="8|12|16|24" {...props} bg="muted">
+  <Section py="8|12|16|24" {...props} backgroundImage="url(https://images.unsplash.com/photo-1593715857989-e22fd13c27d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80)">
     <Container>
-      <H2 m="0" lineHeight="tight" textAlign="center">
+      <H2 m="0" lineHeight="tight" textAlign="center" color="black">
         Our Services
       </H2>
-      <P fontSize="xl|2xl" mt="2" textAlign="center">
+      <P fontSize="xl|2xl" mt="2" textAlign="center"  color="black">
         We provide best services and we work hard to make your sacred journey very  special and memorable
       </P>
       <Grid col="1|2|3" mt="8|10|12" gap="4|6|8">
@@ -12,31 +13,37 @@ export const Features = ({ ...props }) => (
           icon="airplay"
           heading="Pre-Umrah Guidance"
           description="Before we embark on the holy journey we educate you about the process."
+          bg="background"
         />
         <Feature
           icon="globe"
           heading="Visa Services"
           description="The agreements that we have with the hotels and other service providers in Saudi Arabia are one of the best in their field."
+          bg="background"
         />
         <Feature
           icon="archive"
           heading="Laundry Services"
           description="We”ll get your clothes (as many as you want) washed, ironed and delivered back to you absolutely free."
+          bg="background"
         />
         <Feature
           icon="navigation"
           heading="Luxurious Transfers"
           description="Transport from Makkah to Madina in Luxurious AC busses."
+          bg="background"
         />
         <Feature
           icon="coffee"
           heading="Buffet Service"
           description="A variety of Delicious cuisines to tick your tastebuds. Food is served in buffet."
+          bg="background"
         />
         <Feature
           icon="phone"
           heading="Sim cards"
           description="We assist you get local sim card so that youre in touch with youre loved ones."
+          bg="background"
         />
       </Grid>
     </Container>
