@@ -1,9 +1,11 @@
 export const Pricing = ({ ...props }) => (
-  <Section py="8|12|16|24" {...props}>
+  <Section 
+  py="8|12|16|24" {...props}
+    backgroundImage="url(https://images.unsplash.com/photo-1551041777-ed277b8dd348?ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80)">
     <Container>
       <Flexbox flexDirection="column">
-        <H2 m="0" >Umrah for all</H2>
-        <P fontSize="xl|2xl" mt="2" >
+        <H2 color="white" m="0" >Umrah for all</H2>
+        <P color="white" fontSize="xl|2xl" mt="2" >
           Our Umrah Packages are custom designed for your needs
         </P>
       </Flexbox>
@@ -68,8 +70,8 @@ export const PricingItem = ({
     my={isSelected ? 0 : "0|0|8"}
     {...props}
   >
-    <H3 m="0">{heading}</H3>
-    <Ul listStyle="none" p="0" mt="4" flex="1">
+    <H3 m="0" color="white">{heading}</H3>
+    <Ul listStyle="none" color="white" p="0" mt="4" flex="1">
       {list.map((listItem, index) => (
         <Li
           key={index}
