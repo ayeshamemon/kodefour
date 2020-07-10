@@ -11,6 +11,8 @@ export const Pricing = ({ ...props }) => (
       </Flexbox>
       <Grid col="1|2" mt="4|6|8" gap="4|6|0">
         <PricingItem 
+        bg="background"
+        opacity="0.9"
          heading ="General Umrah Package"
           list={[
             "Stay:15 days",
@@ -29,6 +31,8 @@ export const Pricing = ({ ...props }) => (
           borderRight="null|null|none"
         />
         <PricingItem 
+        bg="background"
+        opacity="0.9"
           heading="VIP Umrah Package"
           description="For larger businesses with advanced administration tools"
           list={[
@@ -70,8 +74,8 @@ export const PricingItem = ({
     my={isSelected ? 0 : "0|0|8"}
     {...props}
   >
-    <H3 m="0" color="white">{heading}</H3>
-    <Ul listStyle="none" color="white" p="0" mt="4" flex="1">
+    <H3 m="0">{heading}</H3>
+    <Ul listStyle="none" p="0" mt="4" flex="1">
       {list.map((listItem, index) => (
         <Li
           key={index}
