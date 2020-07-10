@@ -1,10 +1,10 @@
 export const Features = ({ ...props }) => (
   <Section 
   py="8|12|16" {...props}
-  backgroundImage="url(https://images.unsplash.com/photo-1515923019249-6b544314450f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80)">
+  >
     <Container>
-      <h2 textAlign="center">Why Marhaba</h2>
-      <Grid col="1|2|3" mt="8|10|12" gap="4|6|8">
+      <h2 color="#fff" textAlign="center">Why Marhaba</h2>
+      <Grid col="1|2|3" my="8|10|12" gap="4|6|8">
         <Feature
           icon="phone"
           heading="Excellent Support"
@@ -31,16 +31,18 @@ export const Feature = ({ icon, heading, description, ...props }) => (
     flexDirection="column|row"
     textAlign="center|left"
     p="4"
+    border="1px solid #fff"
+    border-radius="10px"
     {...props}
   >
-    <Flexbox justifyContent="center" bg="muted" rounded="full" size="18">
+    <Flexbox justifyContent="center" bg="background" rounded="full" size="18">
       <Icon name={icon} size="8" />
     </Flexbox>
     <Div flex="1" mt="6|0" ml="0|6">
-      <H3 fontSize="2xl" m="0">
+      <H3 color="#fff" fontSize="2xl" m="0">
         {heading}
       </H3>
-      <P fontSize="md" mt="2">
+      <P color="#fff" fontSize="md" mt="2">
         {description}
       </P>
     </Div>
