@@ -1,57 +1,90 @@
 <Section py="8|12|16|24">
   <Container>
-    <Flexbox flexDirection="column" textAlign="center">
-      <H2 m="0" lineHeight="tight">
-        Enquire Now
-      </H2>
-      <P fontSize="xl|2xl" mt="2" textAlign="center">
-        We are here ready to help you.
-      </P>
-      <Form d="grid" col="1|repeat(2, auto)" gap="4" mt="4" w="full|auto">
-        <Div>
-          <VisuallyHidden>
-            <Label htmlFor="form-03-name">Name</Label>
-          </VisuallyHidden>
-          <Input type="text" id="form-03-name" name="name" placeholder="Name" />
-        </Div>
-        <Div>
-          <VisuallyHidden>
-            <Label htmlFor="form-03-email">Email</Label>
-          </VisuallyHidden>
-          <Input
-            type="email"
-            id="form-03-email"
-            name="email"
-            placeholder="Email"
-          />
-        </Div>
-        <Div colStart="span 2">
-          <VisuallyHidden>
-            <Label htmlFor="form-03-phone">Phone</Label>
-          </VisuallyHidden>
-          <Input
-            type="tel"
-            id="form-03-phone"
-            name="phone"
-            placeholder="Phone"
-          />
-        </Div>
-        <Div colStart="span 2">
-          <VisuallyHidden>
-            <Label htmlFor="form-03-message">Message</Label>
-          </VisuallyHidden>
-          <Textarea
-            placeholder="Message"
-            id="form-03-message"
-            name="message"
-            rows="5"
-          />
-        </Div>
-        <Button type="submit" variant="primary" colStart="span 2">
-          Send message
-        </Button>
-      </Form>
-      
-    </Flexbox>
+    <Grid col="1|2" gap="8|12|16">
+      <Div>
+        <H3 mt="0" mb="6">
+          Our Office
+        </H3>
+        <Image src="placeholder.jpg" />
+        <P>
+          Get in touch with us, we
+          are here ready to help you.
+        </P>
+        <P textAlign="center" font-weight="bold">
+          PATEL PARADISE PLOT NO:97<BR />
+          KAUSAR BAUGH OPP GALAXY SOCIETY<BR />
+          PUNE:48
+        </P>
+        <P textAlign="center" font-weight="bold">
+          CONTACT: 9075655655
+        </P>
+      </Div>
+      <Div>
+        <H3 mt="0" mb="6">
+          Get in touch
+        </H3>
+        <Form d="grid" col="1|repeat(2, auto)" gap="4" mt="4" w="full|auto">
+          <Div>
+            <VisuallyHidden>
+              <Label htmlFor="form-02-name">Name</Label>
+            </VisuallyHidden>
+            <Input
+              type="text"
+              id="form-02-name"
+              name="name"
+              placeholder="Name"
+            />
+          </Div>
+          <Div>
+            <VisuallyHidden>
+              <Label htmlFor="form-02-email">Email</Label>
+            </VisuallyHidden>
+            <Input
+              type="email"
+              id="form-02-email"
+              name="email"
+              placeholder="Email"
+            />
+          </Div>
+          <Div>
+            <VisuallyHidden>
+              <Label htmlFor="form-02-phone">Phone</Label>
+            </VisuallyHidden>
+            <Input
+              type="tel"
+              id="form-02-phone"
+              name="phone"
+              placeholder="Phone"
+            />
+          </Div>
+          <Div>
+            <VisuallyHidden>
+              <Label htmlFor="form-02-name">City</Label>
+            </VisuallyHidden>
+            <Input
+              type="text"
+              id="form-02-city"
+              name="city"
+              placeholder="City"
+            />
+          </Div>
+          <Div colStart="span 2">
+            <VisuallyHidden>
+              <Label htmlFor="form-02-message">Message</Label>
+            </VisuallyHidden>
+            <Textarea
+              placeholder="Message"
+              id="form-02-message"
+              name="message"
+              rows="5"
+            />
+          </Div>
+          <Button type="submit" variant="primary" colStart="span 2">
+            Send message
+          </Button>
+        </Form>
+        
+      </Div>
+    </Grid>
   </Container>
 </Section>
