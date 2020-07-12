@@ -1,57 +1,60 @@
-<Section py="8|12|16|24">
+<Section py="8|12|16|24" bg="background">
   <Container>
-    <Flexbox flexDirection="column" textAlign="center">
-      <H2 m="0" lineHeight="tight">
+    <Div textAlign="center" bg="muted" p="10" rounded="3xl">
+      <H2 fontSize="2xl|3xl" m="0">
         Enquire Now
       </H2>
-      <P fontSize="xl|2xl" mt="2" textAlign="center">
-        We are here ready to help you.
-      </P>
-      <Form d="grid" col="1|repeat(2, auto)" gap="4" mt="4" w="full|auto">
-        <Div>
-          <VisuallyHidden>
-            <Label htmlFor="form-03-name">Name</Label>
-          </VisuallyHidden>
-          <Input type="text" id="form-03-name" name="name" placeholder="Name" />
-        </Div>
-        <Div>
-          <VisuallyHidden>
-            <Label htmlFor="form-03-email">Email</Label>
-          </VisuallyHidden>
+    <Form  action="https://api.staticforms.xyz/submit" method="post" d="grid" col="1|repeat(2, auto)" gap="4" mt="4" w="full|auto">
+    <Input type="hidden" name="accessKey" value="7ff62377-60d2-456f-973a-b98142c68c7a"/> 
+      <VisuallyHidden>
+        <Label htmlFor="form-02-name">Name</Label>
+        </VisuallyHidden>
           <Input
-            type="email"
-            id="form-03-email"
-            name="email"
-            placeholder="Email"
+            type="name"
+            id="form-02-name"
+            name="name"
+            placeholder="Name"
           />
-        </Div>
-        <Div colStart="span 2">
-          <VisuallyHidden>
-            <Label htmlFor="form-03-phone">Phone</Label>
-          </VisuallyHidden>
+      <VisuallyHidden>
+        <Label htmlFor="form-02-email">Email</Label>
+      </VisuallyHidden>
+        <Input
+          type="email"
+          id="form-02-email"
+          name="email"
+          placeholder="Email"
+        />
+      <VisuallyHidden>
+        <Label htmlFor="form-02-phone">Phone</Label>
+        </VisuallyHidden>
           <Input
-            type="tel"
-            id="form-03-phone"
+            type="phone"
+            id="form-02-phone"
             name="phone"
             placeholder="Phone"
           />
-        </Div>
-        <Div colStart="span 2">
           <VisuallyHidden>
-            <Label htmlFor="form-03-message">Message</Label>
-          </VisuallyHidden>
-          <Textarea
-            placeholder="Message"
-            id="form-03-message"
-            name="message"
-            rows="5"
-          />
-        </Div>
+              <Label htmlFor="form-02-name">City</Label>
+            </VisuallyHidden>
+            <Input
+              type="text"
+              id="form-02-city"
+              name="city"
+              placeholder="City"
+            />
+        <VisuallyHidden>
+              <Label htmlFor="form-02-message">Message</Label>
+            </VisuallyHidden>
+            <Textarea
+              placeholder="Message"
+              id="form-02-message"
+              name="message"
+              rows="5"
+            />
         <Button type="submit" variant="primary" colStart="span 2">
-          Send message
+            Send message
         </Button>
-      </Form>
-      
-    </Flexbox>
+    </Form>
+  </Div>
   </Container>
 </Section>
