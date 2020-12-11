@@ -1,0 +1,44 @@
+export const Testimonials = ({ ...props }) => (
+  <Section py="8|12|16|24" {...props}>
+    <Container>
+      <H2 m="0" lineHeight="tight" textAlign="center">
+        <Span color="blue"> 150+ </Span> COMPLETED PROJECTS <br /> IN{" "}
+        <Span color="blue"> 6+ </Span>
+        COUNTRIES
+      </H2>
+      <P fontSize="xl|2xl" mt="2" textAlign="center">
+        We deliver globally, providing result-driven project management and
+        seamless communication.
+      </P>
+    </Container>
+    <Container mt="20">
+      <H2 m="0" textAlign="center">
+        Our Commitment to Excellent Service
+      </H2>
+      <Grid col="1|2" gap="8" mt="8">
+        <Testimonial
+          author="Ethiopian Health care Authority"
+          description="New York"
+          message="KodeFour is one of our most preferred service providers who have rendered professional expertise to our desired levels.With the help of their round-the-clock support staff we were able to resolve all issues with remarkable agility and also managed to avoid all sorts of discrepancies in a timely manner."
+        />
+        <Testimonial
+          author=" Medicare"
+          description="New York"
+          message="Our journey with XOYAL was marked by loads of challenges and risks which made it interesting as well as memorable. Their web designing team delivered an innovative piece of work coupled with highly exquisite visual appeal which motivates us to continue on a fruitful journey with them."
+        />
+      </Grid>
+    </Container>
+  </Section>
+);
+
+export const Testimonial = ({ author, description, message, ...props }) => (
+  <Div position="relative" bg="muted" rounded="lg" p="6" {...props}>
+    <P m="0">{message}</P>
+    <P m="0" mt="4" fontSize="xl" fontWeight="semibold">
+      {author}
+    </P>
+    <P m="0" fontSize="md">
+      {description}
+    </P>
+  </Div>
+);
